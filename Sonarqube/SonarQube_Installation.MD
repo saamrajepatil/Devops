@@ -29,7 +29,8 @@ Allow RDS instance security group to access SonarQube server
 
 Connect to RDS instance with database credentials
 ```sh 
-mysql -h <RDS_Instance_endpoint>:3306 -u <DB_USER_NAME> -p <DB_PASSWORD> 
+psql -h pg-prod.chnxxxxx.rds.amazonaws.com --port=5432 -U myuser --dbname=mydb
+ 
 ```
 Create a new sonar database
 ```sh
