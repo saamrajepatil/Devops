@@ -31,6 +31,13 @@ Connect to RDS instance with database credentials
 ```sh 
 psql -h pg-prod.chnxxxxx.rds.amazonaws.com --port=5432 -U myuser --dbname=mydb
  
+1.1 Create user
+      create user <user_name> with password '<password>';
+      
+  1.2 Create database
+      create database <db_name> with owner <user_name> encoding 'UTF8';
+      sonar.jdbc.url=jdbc:postgresql://localhost/<db_name>
+      
 ```
 Create a new sonar database
 ```sh
