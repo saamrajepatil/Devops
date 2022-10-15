@@ -1,0 +1,1 @@
+-m command -a uptime
