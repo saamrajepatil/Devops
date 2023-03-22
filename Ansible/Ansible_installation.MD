@@ -32,6 +32,10 @@ useradd ansadmin
 passwd ansadmin
 # below command addes ansadmin to sudoers file. But strongly recommended to use "visudo" command if you are aware vi or nano editor. 
 echo "ansadmin ALL=(ALL) ALL" >> /etc/sudoers
+
+Then restart the service:
+
+service sshd restart
 ```
 
 Using keybased authentication is advised. If you are still at learning stage use password based authentication (Master & Slave)
