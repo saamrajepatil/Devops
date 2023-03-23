@@ -33,9 +33,7 @@ passwd ansadmin
 # below command addes ansadmin to sudoers file. But strongly recommended to use "visudo" command if you are aware vi or nano editor. 
 echo "ansadmin ALL=(ALL) ALL" >> /etc/sudoers
 
-Then restart the service:
 
-service sshd restart
 ```
 
 Using keybased authentication is advised. If you are still at learning stage use password based authentication (Master & Slave)
@@ -43,6 +41,10 @@ Using keybased authentication is advised. If you are still at learning stage use
 # sed command replaces "PasswordAuthentication no to yes" without editing file 
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 ``` 
+Then restart the service:
+
+service sshd restart
+
 Login as a ansadmin user on master and generate ssh key (Master)
 ```sh 
 ssh-keygen
