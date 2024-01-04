@@ -10,9 +10,9 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. yum install java-11-openjdk
 
 ## Install Java
-We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
+We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/ or for amazon linux node you can use below command
 ```sh
-yum install java-11-openjdk
+sudo yum install java-21-amazon-corretto
 #yum install java-11-openjdk
 ```
 
@@ -21,7 +21,7 @@ Lets install java and set the java home
 ```sh
 java -version
 find /usr/lib/jvm/java* | head -n 3
-#JAVA_HOME=/usr/lib/jvm/java-11-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+#JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto.x86_64
 export JAVA_HOME
 PATH=$PATH:$JAVA_HOME
 # To set it permanently update your .bash_profile
@@ -30,9 +30,9 @@ source ~/.bash_profile
 _The output should be something like this,_
 ```
 [root@~]# java -version
-openjdk version "11.0.0_151"
-OpenJDK Runtime Environment (build 11.0.0_151-b12)
-OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+openjdk version "21.0.1" 2023-10-17 LTS
+OpenJDK Runtime Environment Corretto-21.0.1.12.1 (build 21.0.1+12-LTS)
+OpenJDK 64-Bit Server VM Corretto-21.0.1.12.1 (build 21.0.1+12-LTS, mixed mode, sharing)
 ```
 
 ## Install Jenkins
@@ -40,8 +40,8 @@ You can install jenkins using the rpm or by setting up the repo. We will setup t
 Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
 ```sh
 yum -y install wget
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 yum -y install jenkins
 ```
 
