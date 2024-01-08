@@ -31,15 +31,21 @@ Create a new user for ansible administration & grant admin access to user (Maste
 useradd ansadmin
 passwd ansadmin
 # below command addes ansadmin to sudoers file. But strongly recommended to use "visudo" command if you are aware vi or nano editor. 
-echo "ansadmin ALL=(ALL) ALL" >> /etc/sudoers
+echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 
 ```
 
 Using keybased authentication is advised. If you are still at learning stage use password based authentication (Master & Slave)
-```sh 
-# sed command replaces "PasswordAuthentication no to yes" without editing file 
- sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+Setting up Password Authentication
+EC2(Amazon Linux Server), default password authentication setting is no
+
+$ vi /etc/ssh/sshd_config
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication yes
+#PermitEmptyPasswords no
+#PasswordAuthentication no
+
 ``` 
 Then restart the service:
 
