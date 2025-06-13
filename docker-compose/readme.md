@@ -15,12 +15,15 @@ Docker Compose is a **tool** used to define and run **multi-container Docker app
 To install Docker-Compose, use the following commands:
 
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
 Next, set the permissions:
 
 sudo chmod +x /usr/local/bin/docker-compose
+
 Verify the installation:
 
 docker-compose --version
+
 You should see the Docker-Compose version if the installation was successful.
 
 ### 🔹 Compose File Example:
