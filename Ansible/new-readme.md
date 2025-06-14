@@ -5,6 +5,7 @@ Create 2 EC2 with Amazon linux 2023
 login to your master node using ec2-user
 
 [root@ip-172-31-95-153 ~]# sudo su ec2-user
+
 Install ansible using ec2-user
 
 [ec2-user@ip-172-31-95-153 ~]$ sudo dnf install ansible
@@ -41,8 +42,10 @@ then enter exit.
 vi /etc/ansible/hosts
 paste private ip of worker node
 
-ansible all -m ping
-ansible all -a "df -h"
-ansible all -a "uptime"
+1)ansible all -m ping
+
+2) ansible all -a "df -h"
+   
+3) ansible all -a "uptime"
 
 
