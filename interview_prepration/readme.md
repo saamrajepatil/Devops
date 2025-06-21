@@ -1,4 +1,4 @@
-Step by step guide to Grab DevOps/SRE internships, while you are in college with job portals/projects
+Step by step guide to Grab DevOps/SRE.
 
 
 Getting a DevOps or Site Reliability Engineering (SRE) internship while in college requires a mix of technical preparation, strategic application, and sometimes a bit of persistence. Here's a structured guide to help you break into these roles:
