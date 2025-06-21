@@ -3,7 +3,7 @@ Step by step guide to Grab DevOps/SRE.
 
 Getting a DevOps or Site Reliability Engineering (SRE) internship while in college requires a mix of technical preparation, strategic application, and sometimes a bit of persistence. Here's a structured guide to help you break into these roles:
 
-1. Understand What DevOps/SRE Interns Do
+1. Understand What DevOps/SRE employee Do
 
 Before applying, understand the core responsibilities: DevOps person may work on CI/CD pipelines, infrastructure automation (e.g., with Terraform, Ansible), container orchestration (e.g., Kubernetes), cloud platforms (AWS, GCP, Azure), and monitoring tools.
 SRE person focus on reliability, system performance, incident response, automation, monitoring, and capacity planning.
