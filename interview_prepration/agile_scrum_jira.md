@@ -1,3 +1,4 @@
+
 ### 🔶 1. Waterfall Model
 
 #### ▶ Concept:
@@ -118,16 +119,19 @@
 
 **Goal:** Build and deploy core user registration and product catalog APIs with basic Dev environment setup.
 
-**User Stories/Tasks:**
+**User Stories/Features:**
 
-* \[Dev] Create REST APIs for user registration and login (8 pts)
-* \[Dev] Build product catalog API with search and filter (13 pts)
-* \[DB] Design and create schema for users and products (5 pts)
-* \[QA] Write test cases for user and catalog APIs (3 pts)
-* \[QA] Perform functional testing on DEV environment (5 pts)
-* \[DevOps] Provision DEV environment using Terraform (5 pts)
-* \[DevOps] Configure Jenkins for CI pipeline and trigger (5 pts)
-* \[DevOps] Enable basic monitoring on DEV environment (3 pts)
+* \[Story] Create REST APIs for user registration and login (8 pts)
+* \[Feature] Build product catalog API with search and filter (13 pts)
+* \[Story] Design and create schema for users and products (5 pts)
+
+**Tasks:**
+
+* \[Task] Write test cases for user and catalog APIs (3 pts)
+* \[Task] Perform functional testing on DEV environment (5 pts)
+* \[Task] Provision DEV environment using Terraform (5 pts)
+* \[Task] Configure Jenkins for CI pipeline and trigger (5 pts)
+* \[Task] Enable basic monitoring on DEV environment (3 pts)
 
 ---
 
@@ -135,16 +139,23 @@
 
 **Goal:** Complete shopping cart, initial QA/UAT deployment, and prepare for staging.
 
-**User Stories/Tasks:**
+**User Stories/Features:**
 
-* \[Dev] Implement shopping cart functionality (8 pts)
-* \[Dev] Add integration with payment gateway (13 pts)
-* \[DB] Add schema changes for cart and transactions (3 pts)
-* \[QA] Test end-to-end shopping flow on QA (8 pts)
-* \[DevOps] Setup QA and UAT environments (5 pts)
-* \[DevOps] Build and deploy via CI/CD on QA/UAT (5 pts)
-* \[QA] Perform regression and cross-browser testing (5 pts)
-* \[DevOps] Enable UAT logging/alerts for performance metrics (2 pts)
+* \[Story] Implement shopping cart functionality (8 pts)
+* \[Feature] Add integration with payment gateway (13 pts)
+* \[Story] Add schema changes for cart and transactions (3 pts)
+
+**Tasks:**
+
+* \[Task] Test end-to-end shopping flow on QA (8 pts)
+* \[Task] Setup QA and UAT environments (5 pts)
+* \[Task] Build and deploy via CI/CD on QA/UAT (5 pts)
+* \[Task] Perform regression and cross-browser testing (5 pts)
+* \[Task] Enable UAT logging/alerts for performance metrics (2 pts)
+
+**Bug (Optional Example):**
+
+* \[Bug] Fix issue with user registration form not posting data correctly in QA (3 pts)
 
 ---
 
@@ -186,4 +197,3 @@
 ### ✅ Real-Life Correlation Scenario:
 
 > A product team in a fintech company uses **Scrum** with **Jira** to plan sprints and deliver features. All deployments are managed using **ITIL** processes for change control and incident management. Older legacy systems are still managed with the **Waterfall model** for stability.
-
